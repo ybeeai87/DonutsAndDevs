@@ -1,0 +1,12 @@
+<div *ngFor="let P of personList" mdbDropdown class="dropdown">
+    <p>{{ P.firstName }} {{ P.lastName }}</p>
+       <div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+    Details
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" >{{ P.innovation }} </a></li>
+    <li><a class="dropdown-item" >{{ P.year }} </a></li>
+  </ul>
+</div>
+
